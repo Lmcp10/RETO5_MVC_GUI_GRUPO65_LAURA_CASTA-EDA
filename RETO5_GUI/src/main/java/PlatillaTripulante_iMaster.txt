@@ -249,7 +249,7 @@ public class Requerimiento_1Dao {
             while (rs.next()) {
                 Requerimiento_1Vo requerimiento1 = new Requerimiento_1Vo();
                 requerimiento1.setCiudadResidencia(rs.getString("Ciudad_Residencia"));
-                requerimiento1.setPromedio(rs.getInt("Promedio"));
+                requerimiento1.setPromedio(((int)Math.round(rs.getDouble("Promedio"))));
                 listado_registros_rq1.add(requerimiento1);
             }
             rs.close();
@@ -321,4 +321,5 @@ public class Requerimiento_3Dao {
         return listado_registros_rq3;
     }
 }
+
 
