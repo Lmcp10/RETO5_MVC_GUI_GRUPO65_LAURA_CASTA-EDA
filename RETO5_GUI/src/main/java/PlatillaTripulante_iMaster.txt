@@ -1,0 +1,324 @@
+/*
+ * Pueda usar esta plantilla para la carga del reto a iMaster
+ * Copie las clases de los paquetes Modelo, Vista, Controlador y Util
+ * No incluya los import de los archivos .java solo las clases
+ */
+// Importaciones necesarias en iMaster
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+
+
+// JDBCUTILITIES (No modificar)
+
+public class JDBCUtilities {
+    private static final String DATABASE_LOCATION = "ProyectosConstruccion.db";
+
+    public static Connection getConnection() throws SQLException {
+        String url = "jdbc:sqlite:"+DATABASE_LOCATION;
+
+        return DriverManager.getConnection(url);
+    }
+}
+
+// Remplace en adelante por las clases de sus archivos .java
+
+// VISTA
+public class VistaRequerimientos {
+
+    public static final ControladorRequerimientos controlador = new ControladorRequerimientos();
+
+    //--------------------REQUERIMIENTO 1----------------------
+    public static void requerimiento1() {
+        try {
+            // Su código
+            ArrayList<Requerimiento_1Vo> resultado_requerimiento1 = controlador.consultarRequerimiento1();
+            for (Requerimiento_1Vo reque: resultado_requerimiento1){
+                System.out.printf("%s %d %n",
+                reque.getCiudadResidencia(),
+                reque.getPromedio()
+                );     
+            }
+        } catch (Exception e) {
+            System.out.println("Se ha producido el siguiente error:" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+
+    //--------------------REQUERIMIENTO 2----------------------
+    public static void requerimiento2() {
+        try {
+            // Su código
+            ArrayList<Requerimiento_2Vo> resultado_requerimiento2 = controlador.consultarRequerimiento2();
+            for (Requerimiento_2Vo reque: resultado_requerimiento2){
+                System.out.printf("%d %s %n",
+                reque.getIdProyecto(),
+                reque.getProveedor()
+                ); 
+            }
+        } catch (Exception e) {
+            System.out.println("Se ha producido el siguiente error:" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+    //--------------------REQUERIMIENTO 3----------------------
+    public static void requerimiento3() {
+        try {
+            // Su código
+            ArrayList<Requerimiento_3Vo> resultado_requerimiento3 = controlador.consultarRequerimiento3();
+            for (Requerimiento_3Vo reque: resultado_requerimiento3){
+                System.out.printf("%d %s %n",
+                reque.getIdProyecto(),
+                reque.getNombreMaterial()
+                );
+            }
+        } catch (Exception e) {
+            System.out.println("Se ha producido el siguiente error:" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+}
+
+// CoCONTROLADOR
+
+public class ControladorRequerimientos {
+    // Su código
+    private Requerimiento_1Dao requerimiento_1Dao;
+    private Requerimiento_2Dao requerimiento_2Dao;
+    private Requerimiento_3Dao requerimiento_3Dao;
+
+    public ControladorRequerimientos() {
+        this.requerimiento_1Dao = new Requerimiento_1Dao();
+        this.requerimiento_2Dao = new Requerimiento_2Dao();
+        this.requerimiento_3Dao = new Requerimiento_3Dao();
+    }
+
+    //---------------------------------------------------------------------------------------------//
+
+    public ArrayList<Requerimiento_1Vo> consultarRequerimiento1() throws SQLException {
+        return this.requerimiento_1Dao.requerimiento1();
+    }
+    //---------------------------------------------------------------------------------------------//
+
+
+    public ArrayList<Requerimiento_2Vo> consultarRequerimiento2() throws SQLException {
+        return this.requerimiento_2Dao.requerimiento2();
+    }
+
+ //---------------------------------------------------------------------------------------------//
+
+
+    public ArrayList<Requerimiento_3Vo> consultarRequerimiento3() throws SQLException {
+        // Su código
+        return this.requerimiento_3Dao.requerimiento3();
+    }
+}
+
+
+// MODELO
+// VO1
+public class Requerimiento_1Vo {
+    // Su código
+    private String ciudadResidencia; 
+    private Integer salario; 
+    private Integer promedio;
+
+    public Requerimiento_1Vo() {
+    }
+
+    
+    public String getCiudadResidencia() {
+        return ciudadResidencia;
+    }
+
+
+    public void setCiudadResidencia(String ciudadResidencia) {
+        this.ciudadResidencia = ciudadResidencia;
+    }
+
+
+    public Integer getSalario() {
+        return salario;
+    }
+
+
+    public void setSalario(Integer salario) {
+        this.salario = salario;
+    }
+
+    public Integer getPromedio() {
+        return promedio;
+    }
+
+
+    public void setPromedio(Integer promedio) {
+        this.promedio = promedio;
+    }
+
+
+    @Override
+    public String toString() {
+        return ciudadResidencia + " " + promedio;
+    }
+}
+
+// MODELO
+// VO2
+
+public class Requerimiento_2Vo {
+    // Su código
+    private Integer IdProyecto; 
+    private String Proveedor;
+    
+    public Requerimiento_2Vo() {
+    }
+
+    public Integer getIdProyecto() {
+        return IdProyecto;
+    }
+
+    public void setIdProyecto(Integer idProyecto) {
+        IdProyecto = idProyecto;
+    }
+
+    public String getProveedor() {
+        return Proveedor;
+    }
+
+    public void setProveedor(String proveedor) {
+        Proveedor = proveedor;
+    }
+    
+    @Override
+    public String toString() {
+        return IdProyecto + " " + Proveedor;
+    }
+    
+}
+
+//MODELO
+//VO3
+public class Requerimiento_3Vo {
+    // Su código
+
+    private Integer IdProyecto; 
+    private String NombreMaterial;
+
+    public Requerimiento_3Vo() {
+    }
+
+    public Integer getIdProyecto() {
+        return IdProyecto;
+    }
+
+    public void setIdProyecto(Integer idProyecto) {
+        IdProyecto = idProyecto;
+    }
+
+    
+    public String getNombreMaterial() {
+        return NombreMaterial;
+    }
+
+    public void setNombreMaterial(String nombreMaterial) {
+        NombreMaterial = nombreMaterial;
+    }
+
+    @Override
+    public String toString() {
+        return IdProyecto + " " + NombreMaterial;
+    }
+}
+
+    
+
+//MODELO
+//DAO1
+public class Requerimiento_1Dao {
+    public ArrayList<Requerimiento_1Vo> requerimiento1() throws SQLException {
+        // Su código
+        Connection connection = JDBCUtilities.getConnection();
+        ArrayList<Requerimiento_1Vo> listado_registros_rq1 = new ArrayList<Requerimiento_1Vo>();
+        String sql = "SELECT Ciudad_Residencia, AVG(Salario) AS Promedio FROM Lider GROUP BY Ciudad_Residencia HAVING  AVG(Salario)<400000 ORDER BY Promedio DESC ";
+        try (Statement stmt = connection.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                Requerimiento_1Vo requerimiento1 = new Requerimiento_1Vo();
+                requerimiento1.setCiudadResidencia(rs.getString("Ciudad_Residencia"));
+                requerimiento1.setPromedio(rs.getInt("Promedio"));
+                listado_registros_rq1.add(requerimiento1);
+            }
+            rs.close();
+            stmt.close();
+        }catch(SQLException e){
+            System.err.println("Error consultando: "+e);
+        }finally{
+            if(connection != null){
+                connection.close();
+            }
+        }
+        return listado_registros_rq1;
+    }
+}
+
+//MODELO
+//DAO2
+public class Requerimiento_2Dao {
+    public ArrayList<Requerimiento_2Vo> requerimiento2() throws SQLException {
+        // Su código
+        Connection connection = JDBCUtilities.getConnection();
+        ArrayList<Requerimiento_2Vo> listado_registros_rq2 = new ArrayList<Requerimiento_2Vo>();
+        String sql = "SELECT p.ID_Proyecto, c.Proveedor FROM  Proyecto p JOIN Compra c ON(p.ID_Proyecto=c.ID_Proyecto) WHERE p.Ciudad ='Neiva' ORDER BY p.ID_Proyecto";
+        try (Statement stmt = connection.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                Requerimiento_2Vo requerimiento2 = new Requerimiento_2Vo();
+                requerimiento2.setIdProyecto(rs.getInt("ID_Proyecto"));
+                requerimiento2.setProveedor(rs.getString("Proveedor"));
+                listado_registros_rq2.add(requerimiento2);
+            }
+            rs.close();
+            stmt.close();
+        }catch(SQLException e){
+            System.err.println("Error consultando: "+e);
+        }finally{
+            if(connection != null){
+                connection.close();
+            }
+        }
+        return listado_registros_rq2;
+    }
+}
+
+//MODELO
+//DAO3
+public class Requerimiento_3Dao {
+    public ArrayList<Requerimiento_3Vo> requerimiento3() throws SQLException {
+        // Su código
+        // Su código
+        Connection connection = JDBCUtilities.getConnection();
+        ArrayList<Requerimiento_3Vo> listado_registros_rq3 = new ArrayList<Requerimiento_3Vo>();
+        String sql = "SELECT p.ID_Proyecto, mc.Nombre_Material FROM Proyecto p JOIN Compra c ON(p.ID_Proyecto=c.ID_Proyecto) JOIN MaterialConstruccion mc ON(c.ID_MaterialConstruccion=mc.ID_MaterialConstruccion) WHERE p.ID_Proyecto BETWEEN 40 AND 55 ORDER BY p.ID_Proyecto ASC";
+        try (Statement stmt = connection.createStatement(); ResultSet rs = stmt.executeQuery(sql)) {
+            while (rs.next()) {
+                Requerimiento_3Vo requerimiento2 = new Requerimiento_3Vo();
+                requerimiento2.setIdProyecto(rs.getInt("ID_Proyecto"));
+                requerimiento2.setNombreMaterial(rs.getString("Nombre_Material"));
+                listado_registros_rq3.add(requerimiento2);
+            }
+            rs.close();
+            stmt.close();
+        }catch(SQLException e){
+            System.err.println("Error consultando: "+e);
+        }finally{
+            if(connection != null){
+                connection.close();
+            }
+        }
+        return listado_registros_rq3;
+    }
+}
+
