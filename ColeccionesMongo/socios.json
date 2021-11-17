@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6189b2c0a6574dadef8fa071"
+  },
+  "nombre": "Rosa ",
+  "apellido": "Suarez",
+  "telefono": 3115467758,
+  "correo": "rosas@gmail.com",
+  "documento": "1233888474",
+  "contraseña": "$2a$10$3QNk7f8Fi1ZK31Or73Qe2OlYvWMfokNSsEjXZKHDbp.UFv/gJ/K2q",
+  "rol": "Socio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6189b2fda6574dadef8fa075"
+  },
+  "nombre": "Laura ",
+  "apellido": "Castañeda",
+  "telefono": 32021563,
+  "correo": "laur@gmail.com",
+  "documento": "35495955",
+  "contraseña": "$2a$10$MdqWAyZ7ulrOAspRTOCb5.seBGdrPLLTX5k8C26KFvy4mC4x63npG",
+  "rol": "Socio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618b160c0660d949f254fa68"
+  },
+  "nombre": "Enrique",
+  "apellido": "Castañeda",
+  "telefono": 32021563,
+  "correo": "kik@gmail.com",
+  "documento": "80820767",
+  "contraseña": "$2a$10$1WReQJA0qsEW31cSj7sJyOz8qqudtpRyPPjNiv4W0t4l2X.Imx34G",
+  "rol": "Socio",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618dba5b87b5e07bc9597698"
+  },
+  "nombre": "Laura ",
+  "apellido": "Castañeda",
+  "telefono": 3143159301,
+  "correo": "laura.castaeda95@gmail.com",
+  "documento": "1233888475",
+  "contraseña": "$2a$10$K5nLhq/ZpLTsnNdI70b4/OTIIBs/tAZIcrf4KdIiUbgBSBNnx13v2",
+  "rol": "Socio",
+  "__v": 0
+}]

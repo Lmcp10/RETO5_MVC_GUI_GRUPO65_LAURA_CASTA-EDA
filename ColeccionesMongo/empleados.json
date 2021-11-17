@@ -1,0 +1,53 @@
+[{
+  "_id": {
+    "$oid": "6184ab31afc4b92446385f05"
+  },
+  "nombre": "Camilo",
+  "apellido": "Vargas",
+  "telefono": 4841536461635,
+  "correo": "camilo@gmail.com",
+  "documento": 564879,
+  "contraseña": "$2a$10$olHs0k8w5uPNE/58/XfqaecSm0KfBh8EBEI/um0mDg2zjBrR0LcsW",
+  "rol": "Admin",
+  "user": "Admin1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6184b720978bdc99466b4001"
+  },
+  "nombre": "Marcela",
+  "apellido": "Castañeda",
+  "telefono": 4841536461635,
+  "correo": "lau@gmail.com",
+  "documento": 1233888474,
+  "contraseña": "$2a$10$bxZkvLS3x/8VYYFvU1/.IOghSHuCX7SXb16sAxwJHnZb/5G23IeRS",
+  "rol": "Admin",
+  "user": "Admin2",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6185f9a63ac97fae46186c9c"
+  },
+  "nombre": "Laura ",
+  "apellido": "Perilla",
+  "telefono": 4841536461635,
+  "correo": "lau@gmail.com",
+  "documento": 1019015290,
+  "contraseña": "$2a$10$Fhi9r5HXp98h0XFcAHWESeGGbLzoRS7/fe1Bt/NBd3Xjrrbgjklc2",
+  "rol": "Admin",
+  "user": "Admin3",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6185f9c83ac97fae46186c9f"
+  },
+  "nombre": "Jorge",
+  "apellido": "Perilla",
+  "telefono": 4841536461635,
+  "correo": "lau@gmail.com",
+  "documento": 101920569,
+  "contraseña": "$2a$10$L15HPiQnQZ58ig2D36qtIOfnV9Dy.dTeiKYrOU2YTMRBPFDpDLiZy",
+  "rol": "Admin",
+  "user": "Admin4",
+  "__v": 0
+}]

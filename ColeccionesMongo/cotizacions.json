@@ -1,0 +1,39 @@
+[{
+  "_id": {
+    "$oid": "6189b337a6574dadef8fa07c"
+  },
+  "nombre": "Laura",
+  "apellido": "Castañeda",
+  "documento": "1233888474",
+  "correo": "felipe@gmail.com",
+  "telefono": 4444555,
+  "tipo_evento": "Matrimonio",
+  "num_personas": 150,
+  "area": "Salon presidencial",
+  "fecha": "28-09-2021",
+  "hora": "19:00",
+  "comida": "Buffet",
+  "bebidas": "Coctel",
+  "grupo_musical": "serenata",
+  "adicionales": "ninguno",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6189b391a6574dadef8fa07f"
+  },
+  "nombre": "Felipe",
+  "apellido": "Martinez",
+  "documento": "35495955",
+  "correo": "felipe@gmail.com",
+  "telefono": 4444555,
+  "tipo_evento": "Matrimonio",
+  "num_personas": 150,
+  "area": "Salon presidencial",
+  "fecha": "28-09-2021",
+  "hora": "19:00",
+  "comida": "Buffet",
+  "bebidas": "Coctel",
+  "grupo_musical": "serenata",
+  "adicionales": "ninguno",
+  "__v": 0
+}]

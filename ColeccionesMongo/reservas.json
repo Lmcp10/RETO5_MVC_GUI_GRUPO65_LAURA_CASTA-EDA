@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "618d3a2e01c49e0821c81dd5"
+  },
+  "nombre": "Jose ",
+  "apellido": "Penagos",
+  "documento": "569875662",
+  "correo": "jose25@gmail.com",
+  "telefono": 4444555,
+  "tipo_evento": "Matrimonio",
+  "num_personas": 150,
+  "area": "Salon presidencial",
+  "fecha": "28-09-2021",
+  "hora": "19:00",
+  "comida": "Buffet",
+  "bebidas": "agua",
+  "grupo_musical": "serenata",
+  "adicionales": "ninguno",
+  "socio": "6189b2fda6574dadef8fa075",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618d3cf401c49e0821c81dd9"
+  },
+  "nombre": "Jose",
+  "apellido": "Penagos",
+  "documento": "569875662",
+  "correo": "jose@gmail.com",
+  "telefono": 4444555,
+  "tipo_evento": "Grado",
+  "num_personas": 100,
+  "area": "Salon gourmet",
+  "fecha": "30-12-2021",
+  "hora": "19:00",
+  "comida": "Buffet",
+  "bebidas": "agua",
+  "grupo_musical": "dj",
+  "adicionales": "decoracion \"ingeniero de sistemas\"",
+  "socio": "6189b2fda6574dadef8fa075",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "618dc74955deace120bf65e3"
+  },
+  "nombre": "Jose",
+  "apellido": "Penagos",
+  "documento": "569875662",
+  "correo": "jose@gmail.com",
+  "telefono": 4444555,
+  "tipo_evento": "Grado",
+  "num_personas": 100,
+  "area": "Salon gourmet",
+  "fecha": "30-12-2021",
+  "hora": "19:00",
+  "comida": "Buffet",
+  "bebidas": "agua",
+  "grupo_musical": "dj",
+  "adicionales": "decoracion \"ingeniero de sistemas\"",
+  "socio": "618b160c0660d949f254fa68",
+  "__v": 0
+}]

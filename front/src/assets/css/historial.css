@@ -1,0 +1,19 @@
+.content{
+
+   
+    background-color: #fff;
+    padding: 0px 30px;
+    border-radius: 20px;
+    box-shadow: 7px 13px 37px rgb(8, 5, 190);
+    padding-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+     
+  }
+  
+  .content1{
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 25px;
+
+  }

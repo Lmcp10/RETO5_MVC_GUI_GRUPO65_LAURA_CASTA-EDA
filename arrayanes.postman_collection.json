@@ -1,0 +1,954 @@
+{
+	"info": {
+		"_postman_id": "1a410ddb-3e67-4fc6-bc5e-bcc67cbcac98",
+		"name": "arrayanes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RESERVA",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Jose",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Penagos",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "569875662",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "jose@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "4444555",
+							"type": "text"
+						},
+						{
+							"key": "tipo_evento",
+							"value": "Grado",
+							"type": "text"
+						},
+						{
+							"key": "num_personas",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "Salon gourmet",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "30-12-2021",
+							"type": "text"
+						},
+						{
+							"key": "hora",
+							"value": "19:00",
+							"type": "text"
+						},
+						{
+							"key": "comida",
+							"value": "Buffet",
+							"type": "text"
+						},
+						{
+							"key": "bebidas",
+							"value": "agua",
+							"type": "text"
+						},
+						{
+							"key": "grupo_musical",
+							"value": "dj",
+							"type": "text"
+						},
+						{
+							"key": "adicionales",
+							"value": "decoracion \"ingeniero de sistemas\"",
+							"type": "text"
+						},
+						{
+							"key": "socio",
+							"value": "618b160c0660d949f254fa68",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/reserva/nueva-reserva",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reserva",
+						"nueva-reserva"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR TODAS LAS RESERVAS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/reserva/listar-reservas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reserva",
+						"listar-reservas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR UNA RESERVA ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/reserva/listar-reserva/618d3a2e01c49e0821c81dd5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reserva",
+						"listar-reserva",
+						"618d3a2e01c49e0821c81dd5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR RESERVAS POR SOCIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/reserva/listar-reservas-socio/6189b2fda6574dadef8fa075",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reserva",
+						"listar-reservas-socio",
+						"6189b2fda6574dadef8fa075"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR RESERVA",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/reserva/eliminar-reserva/6189b7b7ad96dcef54e6eb6d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reserva",
+						"eliminar-reserva",
+						"6189b7b7ad96dcef54e6eb6d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR RESERVA",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "correo",
+							"value": "jose25@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/reserva/actualizar-reserva/618d3a2e01c49e0821c81dd5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"reserva",
+						"actualizar-reserva",
+						"618d3a2e01c49e0821c81dd5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "COTIZACION",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Laura ",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Martinez",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "1233888474",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "felipe@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "4444555",
+							"type": "text"
+						},
+						{
+							"key": "tipo_evento",
+							"value": "Matrimonio",
+							"type": "text"
+						},
+						{
+							"key": "num_personas",
+							"value": "150",
+							"type": "text"
+						},
+						{
+							"key": "area",
+							"value": "Salon presidencial",
+							"type": "text"
+						},
+						{
+							"key": "fecha",
+							"value": "28-09-2021",
+							"type": "text"
+						},
+						{
+							"key": "hora",
+							"value": "19:00",
+							"type": "text"
+						},
+						{
+							"key": "comida",
+							"value": "Buffet",
+							"type": "text"
+						},
+						{
+							"key": "bebidas",
+							"value": "Coctel",
+							"type": "text"
+						},
+						{
+							"key": "grupo_musical",
+							"value": "serenata",
+							"type": "text"
+						},
+						{
+							"key": "adicionales",
+							"value": "ninguno",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/cotizacion/nueva-cotizacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cotizacion",
+						"nueva-cotizacion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR TODAS LAS COTIZACIONES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/cotizacion/listar-cotizaciones",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cotizacion",
+						"listar-cotizaciones"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR UNA COTIZACION ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/cotizacion/listar-cotizacion/6189b337a6574dadef8fa07c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cotizacion",
+						"listar-cotizacion",
+						"6189b337a6574dadef8fa07c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR UNA COTIZACION ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/cotizacion/eliminar-cotizacion/618989ea10484878810ef12a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cotizacion",
+						"eliminar-cotizacion",
+						"618989ea10484878810ef12a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR COTIZACION",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Felipe",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "correo",
+							"value": "luism@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/cotizacion/actualizar-cotizacion/618989ae10484878810ef128",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cotizacion",
+						"actualizar-cotizacion",
+						"618989ae10484878810ef128"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR COTIZACION POR DOCUMENTO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "autorizacion",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTg0YWIzMWFmYzRiOTI0NDYzODVmMDUiLCJpYXQiOjE2MzYxNzM4MzR9.1zIslCWVq1gXJGf4c3rS-Oh3ODLVDkbrpdJ9J98yZXI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/cotizacion/buscar-cotizacion/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"cotizacion",
+						"buscar-cotizacion",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SOCIO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Enrique",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Castañeda",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "32021563",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "kik@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "80820767",
+							"type": "text"
+						},
+						{
+							"key": "contraseña",
+							"value": "123456",
+							"type": "text"
+						},
+						{
+							"key": "rol",
+							"value": "Socio",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/socio/nuevo-socio",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"nuevo-socio"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "documento",
+							"value": "80820767",
+							"type": "text"
+						},
+						{
+							"key": "contraseña",
+							"value": "123456",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/socio/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR TODOS LOS SOCIOS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/socio/listar-socios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"listar-socios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR UN SOCIO POR DOCUMENTO",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/socio/listar-socio/1233888474",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"listar-socio",
+						"1233888474"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR SOCIO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/socio/eliminar-socio/618486fcc7b165e5aa8c2904",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"eliminar-socio",
+						"618486fcc7b165e5aa8c2904"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR SOCIO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "telefono",
+							"value": "3115467758",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/socio/actualizar-socio/6189b2c0a6574dadef8fa071",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"actualizar-socio",
+						"6189b2c0a6574dadef8fa071"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR SOCIO POR DOCUMENTO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "autorizacion",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTg0YWIzMWFmYzRiOTI0NDYzODVmMDUiLCJpYXQiOjE2MzYxNzM4MzR9.1zIslCWVq1gXJGf4c3rS-Oh3ODLVDkbrpdJ9J98yZXI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/socio/buscar-socio/1233",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"socio",
+						"buscar-socio",
+						"1233"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "EMPLEADO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "David",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Mantilla",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "4841536461635",
+							"type": "text"
+						},
+						{
+							"key": "correo",
+							"value": "lau@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "documento",
+							"value": "101920569",
+							"type": "text"
+						},
+						{
+							"key": "contraseña",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "rol",
+							"value": "Admin",
+							"type": "text"
+						},
+						{
+							"key": "user",
+							"value": "Admin5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/empleado/nuevo-empleado",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"nuevo-empleado"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN EMPLEADO",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "user",
+							"value": "Admin1",
+							"type": "text"
+						},
+						{
+							"key": "contraseña",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/empleado/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR TODOS LOS EMPLEADOS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/empleado/listar-empleados",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"listar-empleados"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LISTAR EMPLEADO ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/empleado/listar-empleado/6184b720978bdc99466b4001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"listar-empleado",
+						"6184b720978bdc99466b4001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ELIMINAR EMPLEADO",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/empleado/eliminar-empleado/6184ad8d60bb964c9496bef1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"eliminar-empleado",
+						"6184ad8d60bb964c9496bef1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ACTUALIZAR EMPLEADO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "Marcela",
+							"type": "text"
+						},
+						{
+							"key": "apellido",
+							"value": "Castañeda",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:4000/empleado/actualizar-empleado/6184b720978bdc99466b4001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"actualizar-empleado",
+						"6184b720978bdc99466b4001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "BUSCAR EMPLEADOS POR APELLIDO",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "autorizacion",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MTg0YWIzMWFmYzRiOTI0NDYzODVmMDUiLCJpYXQiOjE2MzYxNzM4MzR9.1zIslCWVq1gXJGf4c3rS-Oh3ODLVDkbrpdJ9J98yZXI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost:4000/empleado/buscar-empleado/V",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						"empleado",
+						"buscar-empleado",
+						"V"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,385 @@
+.container{ 
+  background-color: #fff;
+  padding: 0px 30px;
+  border-radius: 20px;
+  box-shadow: 7px 13px 37px #173c8b;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 18px;
+  padding-bottom: 5px;
+  
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.user-details .input-box select{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+  
+}
+ form .gender-details .gender-title{
+  font-size: 18px;
+  display: block;
+  font-family: 'Pathway Gothic One', sans-serif;
+  }
+
+ form .gender-details2 .gender-title{
+  font-size: 20px;
+  font-weight: 300px;
+ }
+
+ form .category{
+   width: 150px;
+ }
+
+ form .category label{
+   font-size: 16px;
+   font-family: 'Pathway Gothic One', sans-serif;
+ }
+ 
+ 
+  
+ form .button{
+   height: 45px;
+   margin: 35px 0
+   
+ }
+
+/* .button1{
+  height: 45px;
+  margin: 35px 0;
+  margin-left: 100px;
+} */
+
+form .button2{
+  height: 45px;
+  margin: 35px 0;
+  margin-left: 400px;
+}
+
+/* FORMULARIO MI CUENTA */
+.btnmisreservas input{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+  position: center;
+  text-align: center;
+  margin-left: 320px;
+  margin-top: 20px;
+}
+.input-doc{
+  margin-left: 220px;
+}
+
+.btnbuscarasoc input{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+  position: center;
+  text-align: center;
+  margin-left: 220px;
+  
+}
+
+.btnactu input{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+  position: center;
+  text-align: center;
+  margin-left: 320px;
+  height: 45px; 
+
+}
+
+
+
+ form .button input{
+   height: 100%;
+   width: 200px;
+   border-radius: 5px;
+   color: #fff;
+   font-size: 25px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+   font-family: 'Pathway Gothic One', sans-serif;
+   position: center;
+   text-align: center;
+ }
+
+ 
+.button1 input{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+  position: center;
+  text-align: center;
+  margin-left: 320px;
+  margin-top: 20px;
+}
+
+
+form .button2 input{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+
+}
+
+.button3 input{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+  position: center;
+  text-align: center;
+  margin-left: 120px;
+  height: 45px; 
+}
+
+
+form .button4{
+  height: 100%;
+  width: 200px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  font-family: 'Pathway Gothic One', sans-serif;
+  position: center;
+  text-align: center;
+  margin-left: 120px;
+  height: 45px;
+}
+
+
+ form .button input:hover{
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+
+.button1 input:hover{
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+
+.button3 input:hover{
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+
+.button4 input:hover{
+  transform: scale(0.99);
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+  
+
+input[type="checkbox" ] {
+  width: 25px; 
+  height: 25px;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+h3{
+font-size: 38px;
+line-height: 44px;
+color: #263555;
+text-transform: uppercase;
+margin-bottom: 0px;
+padding-bottom: 20px;
+text-align: center;
+}
+
+select{
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 18px;
+}
+
+p{
+font-size: 30px;
+text-align: center;
+font-family: 'Pathway Gothic One', sans-serif;
+}
+
+.content form .user-details2 {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 20px 0 12px 0;
+font-size: 18px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+
+form .user-details2 .input-box{
+  margin-bottom: 15px;
+  width: 400px;
+  margin-left: 250px;
+}
+
+.user-details2 .input-box input{
+  font-size: 18px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-bottom: 20px;
+}
+
+
+.form .label{
+  color: #263555;
+}
+
+
+/* REGISTRO RESERVA/COTIZACION,FORMULARIO COTIZACION/RESERVA */
+.container-regrev{
+  background-color: #fff;
+  padding: 0px 30px;
+  border-radius: 20px;
+  box-shadow: 7px 13px 37px rgb(8, 5, 190);
+  padding-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+   
+}
+
+.user-details2 .input-resev select{
+  height: 45px;
+  font-size: 18px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-bottom: 20px;
+  padding-top: 8px;
+}
+
+
+
+.textarea .input-resev{
+  margin: 0px;
+  width: 500px; 
+  height: 158px;
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  border-radius: 5px;
+   
+}
+
+.user-details2 .input-resev input{
+  font-size: 18px;
+  border-radius: 5px;
+
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-bottom: 20px;
+}
+
+.user-details2 .input-resev1 input{
+  font-size: 18px;
+  border-radius: 5px;
+
+  border: 1px solid rgb(33, 8, 124);
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  font-family: 'Pathway Gothic One', sans-serif;
+  margin-bottom: 80px;
+}
